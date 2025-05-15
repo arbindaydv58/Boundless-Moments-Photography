@@ -1,0 +1,85 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background: url('Asset/gallery2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #484343;
+    min-height: 100vh;
+    padding: 3rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Gallery grid */
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1;
+  }
+  
+  /* Individual gallery cards */
+  #gallery div {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  #gallery div:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.12);
+  }
+  
+  /* Images */
+  #gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Title text */
+  #gallery p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: auto;
+    padding: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  

@@ -1,0 +1,124 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-image: url('Asset/login.webp'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.background-overlay {
+    height: 100%;
+    width: 100%;
+   /* background: rgba(0, 0, 0, 0.7);  /* Dark overlay for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    background: linear-gradient(to right, #bac2c2, #635ada);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.85);  /* Semi-transparent white background */
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+form input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db; /* Blue color for login button */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.register-link {
+    margin-top: 1rem;
+}
+
+.register-link a {
+    color: #3498db;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay to contrast with text */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+}

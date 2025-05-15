@@ -1,0 +1,67 @@
+/* Reset and base layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('Asset/eeeee.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f7f4f4;
+    padding-top: 100px; /* space for fixed header */
+    padding-bottom: 70px; /* space for fixed footer */
+  }
+  
+  /* Fixed Header */
+  h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #f7c08a;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Main Content Styling */
+  div {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    color: #ffd369;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fffcfc;
+    margin-bottom: 30px;
+    font: bold;
+  }
+  
+  /* Fixed Footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.95rem;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.5);
+  }
+  
